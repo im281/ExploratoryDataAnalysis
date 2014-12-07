@@ -1,0 +1,52 @@
+# assign x to a numeric vector composed of 1000 random, normally-distributed numbers with mean 0 and sd 1
+x <- rnorm(1000, mean=0, sd=1)
+# reassign x to be a character, demonstrating that R is a dynamic programming language.
+x <- 'A text string'
+
+# demonstration of how to write a data.frame out to a flat file
+write.csv(mtcars, 'mtcars.csv')
+
+# show all files in my current working directory
+list.files()
+
+# read back in the text file that I just wrote out
+xcars <- read.csv('mtcars.csv', header=TRUE)
+# view the new data.frame and compare it with the original
+xcars
+mtcars
+
+# get the 'xcars' type of object
+class(xcars)
+rownames(xcars) <- xcars[,1] # assign first column to the rownames
+xcars <- xcars[,-1] # remove the first column from 'xcars'
+
+# create a function that determines if two data.frames are identical or not
+is.identical <- function(x, y) {
+  return(dim(x)[1] * dim(x)[2] == sum(y == y))
+}
+
+# call 'is.identical' to determine if our new 'xcars' is exactly the same as 'mtcars'
+is.identical(xcars, mtcars)
+
+# view the columns of 'mtcars'
+colnames(mtcars)
+
+# get maximum value of the 'wt' column in 'mtcars'
+max(mtcars[,'wt'])
+# stat summary of 'mtcars'
+summary(mtcars)
+
+# attach the mtcars data frame to the current workspace
+attach(mtcars)
+# open the graphics device
+x11()
+# plot 'mpg' (x-axis) and 'hp' (y-axis) from the attached data.frame
+plot(mpg, hp)
+# linear regression on hp (dependent variable) vs. mpg (independent variable) [example case]
+# then add the regression line to the plot [using 'abline'], and color the line red
+abline(lm(hp ~ mpg), col='red')
+# detach the data.frame from the workspace (it can still be used, but you'll have to call the table directly
+detach(mtcars)
+
+# transform the data.frame (pivots 90 degrees)
+t(xcars)

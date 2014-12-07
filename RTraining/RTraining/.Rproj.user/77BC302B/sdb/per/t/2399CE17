@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1417821927956.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2399CE17",
+    "lastKnownWriteTime" : 29555340706054145,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "pepMerge",
+        "contentUrl" : "content?title=pepMerge&file=289e97dc67ae49a8a6aea11a0192087c.htm",
+        "displayedObservations" : 1000,
+        "displayedVariables" : 6,
+        "totalObservations" : 875680,
+        "variables" : 6
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

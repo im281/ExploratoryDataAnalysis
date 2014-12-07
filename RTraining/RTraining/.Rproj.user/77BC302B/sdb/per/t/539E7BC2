@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1417821510957.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "539E7BC2",
+    "lastKnownWriteTime" : 29555340706054145,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "PeptideMetadata",
+        "contentUrl" : "content?title=PeptideMetadata&file=cdd629e4e91540729b32e542980c082d.htm",
+        "displayedObservations" : 1000,
+        "displayedVariables" : 4,
+        "totalObservations" : 13472,
+        "variables" : 4
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

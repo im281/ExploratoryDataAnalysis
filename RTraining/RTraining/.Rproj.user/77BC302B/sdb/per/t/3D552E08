@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1415998677949.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3D552E08",
+    "lastKnownWriteTime" : 29555340712673384,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "PeptideData",
+        "contentUrl" : "content?title=PeptideData&file=6cc852ed6a574ab2b98207c2d9bdab11.htm",
+        "displayedObservations" : "1000",
+        "displayedVariables" : 3,
+        "totalObservations" : "771290",
+        "variables" : "3"
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

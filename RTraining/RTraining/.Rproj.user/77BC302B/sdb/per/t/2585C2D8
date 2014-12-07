@@ -1,0 +1,17 @@
+{
+    "contents" : "#read data\nPeptideData <- read.csv(\"~/Rdata/RTraining/RTraining/PeptideData.csv\", stringsAsFactors=FALSE)\n\n#read data\nPeptideMetaData <- read.csv(\"~/Rdata/RTraining/RTraining/PeptideMetadata.csv\", stringsAsFactors=FALSE)\n\n#merge the data\npepMerge <- merge(\n  x=PeptideData,\n  y=PeptideMetaData,\n  by = \"Mass_Tag_ID\")",
+    "created" : 1417821427134.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "355111970",
+    "id" : "2585C2D8",
+    "lastKnownWriteTime" : 1417822045,
+    "path" : "~/Rdata/RTraining/RTraining/Assignment2.R",
+    "project_path" : "Assignment2.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

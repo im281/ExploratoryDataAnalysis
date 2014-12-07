@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1416003205124.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F3716D06",
+    "lastKnownWriteTime" : 29555340706054145,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "Peptides",
+        "contentUrl" : "content?title=Peptides&file=424c3354924e41229fcae83a2a36af14.htm",
+        "displayedObservations" : 1000,
+        "displayedVariables" : 69,
+        "totalObservations" : 13472,
+        "variables" : 69
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

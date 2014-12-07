@@ -1,0 +1,17 @@
+{
+    "contents" : "Peptides <- read.csv(\"~/Rdata/RTraining/RTraining/Peptides.csv\")\n\n#show first few rows\nhead(Peptides)\n\n#show last few rows\ntail(Peptides)\n\n#show $columns\nstr(Peptides)\n\n#show all rows 1st column\nPeptides[,1]\n\n#show all columns 1st row\nPeptides[1,]\n\n#show column names\ncolnames(Peptides)\n\n#show row names\nrownames(Peptides)\n\n#plot histogram of control #1\nhist(Peptides[,5], breaks= 100)\n\n\nx <- 5\nx<-c(x,6,10,2)\nrm(x)\n\nlibrary(psych)\nrequire(psych)\n\ndescribe(Peptides)\npairs.panels(Peptides)\n\npairs.panels(Peptides[,5:10])\n\n\nrowname(Peptides) <- Peptides[,1]\n\n#remove protein identifiers\n\nPeptides[1:5,1:5]\n\nPeptides <- Peptides[,-2]\n\n",
+    "created" : 1416003405019.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1153054813",
+    "id" : "A3ECE2CA",
+    "lastKnownWriteTime" : 1417826990,
+    "path" : "~/Rdata/RTraining/RTraining/Assignment1.R",
+    "project_path" : "Assignment1.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
