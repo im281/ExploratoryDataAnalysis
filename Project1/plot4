@@ -1,0 +1,20 @@
+# 4 figures arranged in 2 rows and 2 columns
+par(mfrow=c(2,2))
+
+#plot
+plot(d1$Time, d1$Global_active_power,'l',ylab = "Global Active Power", xlab = "", cex.lab = 0.75)
+
+#plot
+plot(d1$Time,d1$Voltage,'l', xlab = 'datetime', ylab = 'Voltage')
+
+
+#plot with multiple series
+plot(d1$Time,d1$Sub_metering_1,'l', ylab = 'Energy sub-metering', xlab = "", cex.lab = 0.75) 
+lines(d1$Time,d1$Sub_metering_2,col= 'red')
+lines(d1$Time,d1$Sub_metering_3,col= 'blue')
+#add legend
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3") ,col=c('black', 'red', 'blue'),bty = "n",lty=1, cex = 0.7)
+
+#plot
+plot(d1$Time,d1$Global_reactive_power,'l', xlab = 'datetime',ylab = 'Global_reactive_power', cex.lab = 0.75 )
+  

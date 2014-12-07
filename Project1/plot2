@@ -1,0 +1,7 @@
+#set the time field
+time <- paste(d1$Date, d1$Time)
+d1$Time <- strptime(time, "%d/%m/%Y %H:%M:%S")
+
+#plot
+plot(d1$Time, d1$Global_active_power,'l',ylab = "Global Active Power (kilowatts)", xlab = "")
+

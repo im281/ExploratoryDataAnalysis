@@ -1,0 +1,5 @@
+#read data
+d <- read.csv("~/Rdata/ExploratoryDataAnalysis/Project1/exdata-data-household_power_consumption/exdata-data-household_power_consumption.csv", quote="", na.strings="?", stringsAsFactors=FALSE)
+
+#subset data
+d1 <- subset(d, Date == "1/2/2007" | Date == "2/2/2007")
